@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моё хобби — игры</title>
+    <link rel="stylesheet" href="diplom.css">
+</head>
+<body>
+
+<header>
+    <div class="title">МОЁ ХОББИ</div>
+    <nav>
+        <a href="#about">О себе</a>
+        <a href="#games">Игры</a>
+        <a href="#achievements">Достижения</a>
+        <a href="#why">Почему игры</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>О себе</h2>
+    <div class="cards">
+        <div class="card">
+            Привет! Меня зовут Рамис. Моё любимое хобби — видеоигры.
+            Я играю в мобильные и компьютерные игры, развиваю реакцию
+            и общаюсь с друзьями.
+        </div>
+        <button onclick="toggleTheme()">Сменить тему сайта</button>
+    </div>
+</section>
+
+<section id="games">
+    <h2>Мои любимые игры</h2>
+    <div class="card">
+        <strong>Самая любимая игра - Counter-Strike 2</strong><br>
+        Люблю поиграть в нее после школы, в основном ради рейтинга.
+    </div>
+    <div class="card">
+        <strong>Assassin’s Creed Unity</strong><br>
+        Нравится атмосфера Парижа, паркур и сюжет.
+    </div>
+    <div class="card">
+        <strong>Обычные сюжетки</strong><br>
+        Иногда я играю обычные сюжетные игры чтобы расслабиться.
+    </div>
+</section>
+
+<section id="achievements">
+    <h2>Мои достижения</h2>
+    <div class="card">
+        • Высокий ранг в любимых играх<br>
+        • Прошёл много миссий и кампаний<br>
+        • Хорошие результаты и победы
+    </div>
+</section>
+
+<section id="why">
+    <h2>Почему я люблю игры</h2>
+    <div class="card">
+        Игры помогают отдыхать, тренировать мышление,
+        внимание и получать положительные эмоции.
+    </div>
+</section>
+<section>
+    <h2>Игры (Сделано на JS)</h2>
+
+    <select id="categoryFilter">
+        <option value="all">Все</option>
+        <option value="computer">Компьютерные</option>
+        <option value="telefon">Мобильные</option>
+    </select>
+
+    <div id="cardsContainer"></div>
+</section>
+
+<div id="modal">
+    <div id="modalContent">
+        <span id="closeModal">×</span>
+        <h3 id="modalTitle"></h3>
+        <img id="modalImage">
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+<footer>
+    ©️ 2025 • Мой игровой мир
+</footer>
+
+<script src="diplom.js"></script>
+
+</body>
+</html>
