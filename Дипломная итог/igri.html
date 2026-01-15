@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Игры</title>
+    <link rel="stylesheet" href="diplom.css">
+</head>
+<body>
+
+<header>
+    <div class="title">МОЁ ХОББИ</div>
+    <nav>
+        <a href="main.html">Главная</a>
+        <a href="o_sebe.html">О себе</a>
+        <a href="igri.html">Игры</a>
+        <a href="dostizheniya.html">Достижения</a>
+        <a href="why.html">Почему игры</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Игры (сделано на JavaScript)</h2>
+    <button onclick="toggleTheme()">Сменить тему сайта</button>
+
+    <select id="categoryFilter">
+        <option value="all">Все</option>
+        <option value="computer">Компьютерные</option>
+        <option value="telefon">Мобильные</option>
+    </select>
+
+    <div id="cardsContainer"></div>
+</section>
+
+<div id="modal">
+    <div id="modalContent">
+        <span id="closeModal">×</span>
+        <h3 id="modalTitle"></h3>
+        <img id="modalImage">
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+
+<footer>©️ 2025 • Мой игровой мир</footer>
+<script src="diplom.js"></script>
+</body>
+</html>
